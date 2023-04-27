@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificacion perfil</title>
+    <link rel="stylesheet" href="estilomain.css">
+</head>
+<body>
+  <header class="header container">        
+    <nav class="container_top">
+        <div class="container_top">
+            <img class="logo_encabezado" src="img/logo_trans_1500.png" alt="logo">
+            <div class="btn_nav">
+                <button class="button_banner"><a href="principal_main.html">Inicio</a></button>
+                <button class="button_banner"><a href="perfil_propio.html">Perfil</a></button>
+                <button class="button_banner"><a href="configuracion.html">Configuración</a></button>
+            </div>
+        </div>
+    </nav>
+  </header>
+  <div class="perfil">
+      <div class="foto">
+          <img src="img/chica_sombrero.jpg" alt="Foto de perfil">
+      </div>
+      <div class="informacion">
+          <h1>Verónica González</h1>
+          <h2>@verygon</h2>
+          <br></br>
+      </div>
+  </div>
+    <form class="formulario">
+        <h2>Modificar datos personales</h2>
+        <br>
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto">
+        
+        <label for="Nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" value="Verónica">
+
+        <label for="Apellidos">Apellidos</label>
+        <input type="text" id="apellido" name="apellido" value="González">
+
+        <label for="Nombre de usuario">Nick</label>
+        <input type="text" id="nombre_usuario" name="nombre_usuario" value="@verygon">
+
+        <label for="Ciudad de residencia">Ciudad de residencia</label>
+        <input type="text" id="ciudad" name="ciudad" value="Bilbao">
+      
+        <label for="Pais de residencia">Pais de residencia</label>
+        <input type="text" id="pais" name="pais" value="España">
+
+        <label for="fecha_nacimiento">Fecha de nacimiento</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" value="1990-04-15">
+      
+        <label for="Estudios">Estudios</label>
+        <input type="text" id="estudios" name="estudios" value="Ingeniero en telecuminaciones">
+
+      <label for="Idiomas">Idiomas</label>
+      <input type="idiomas" id="idiomas" name="idiomas" value="Inglés, español y ruso">
+      
+      <label for="Perfil de Linkedin">Perfil de Linkedin</label>
+      <input type="linkedin" id="linkedin" name="linkedin">
+
+      <label for="Hobbies">Hobbies</label>
+      <input type="hobbies" id="hobbies" name="hobbies" value="Hacer rutas, leer y escuchar música">
+      
+      <label for="Experiencia laboral">Experiencia laboral</label>
+      <input type="text" id="esperiencia" name="linkedin">
+
+      <button onclick="guardar()"><a href="perfil_propio.html">Guardar</a></button>
+      <button class="btn_rechazar1" ><a href="perfil_propio.html">Cancelar</a></button>
+    </form>
+  </div>
+  <body>  
+    <script>
+      function guardar() {
+        if (confirm("¿Estás seguro de continuar con los cambios?")) {
+          // Aquí iría el código para guardar los cambios
+          alert("Los cambios han sido guardados correctamente.");
+        }
+      }
+    </script>        
+    </body>
+    </html>

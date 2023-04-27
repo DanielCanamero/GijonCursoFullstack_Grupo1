@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="firefox">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENRED@NDO</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="ingreso_login.css">
+
+  <!-- <script src="./app.js"></script> -->
+  <script src="./ingreso_login.js"></script>
+
+</head>
+
+<body>
+
+  <img class="logo_m" src="./img/logo_oscuro_480.png" alt="Logo de ENREDANDO" style="margin-top:5px;">
+
+  <div class="lt1_grd_n color1 textos"><label class="shadow-lg p-3 rounded">Bienvenido a ENRED@NDO</label></div>
+
+  <div class="lt1_med color1 textos" id="mensaje">Introduce a continuación tus datos de acceso</div>
+
+  <div class="cf_vert borde2 color3 textos caja_datos">
+
+    <form id="formulario"></form>
+
+    <label class="lt1_med textos" for="username">E-mail / Nick</label>
+    <input class="lt1_med dato_gr" type="email" name="username" id="username">
+
+    <label class="lt1_med textos" for="pwd">Contraseña</label>
+    <input class="lt1_med dato_pq" type="password" name="pwd" id="pwd">
+
+    <button class="boton1 lt1_nor_n boton_space" onclick="compruebaLogin()" type="submit" id="boton">Acceder</button>
+
+    </form>
+
+  </div>
+
+  <footer>
+    <div class="lt1_nor color1 textos_pie">Si aún no dispones de tu cuenta personal en ENRED@NDO pulsa <a href="registro_register.html">aquí</a></div>
+    <div class="lt1_nor color1 textos_pie">Si has olvidado tus datos acceso a ENRED@NDO pulsa <a href="vacia_dummy.html">aquí</a></div>
+    <div class="lt1_peq_n color1 textos_pie" style="font-style: italic;">Todos los derechos reservados - ENRED@NDO ©2023</div>
+  </footer>
+
+</body>
+
+</html>

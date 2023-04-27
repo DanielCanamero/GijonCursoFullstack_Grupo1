@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mascotas</title>
+    <link rel="stylesheet" href="estilomain.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header container">        
+        <nav class="container_top">
+            <div class="container_top">
+                <img class="logo_encabezado" src="img/logo_trans_1500.png" alt="logo">
+                <div class="btn_nav">
+                    <button class="button_banner"><a href="principal_main.html">Inicio</a></button>
+                    <button class="button_banner"><a href="perfil_propio.html">Perfil</a></button>
+                    <button class="button_banner"><a href="configuracion.html">Configuración</a></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="row">
+        <div class="col-lg-8 align_med container_publicaciones" id="imgAmigo">
+            <div>
+                <h3 class="container text-center">MASCOTAS DE AMIGOS</h3>  
+                <script>
+                    let imgAmigo = document.getElementById("imgAmigo")
+    
+                    function getSolAmigo(url){
+                        fetch(url).then(Response => Response.json())
+                        .then(json=>{
+    
+                            let solAmigo = document.createElement("img");
+                            solAmigo.setAttribute("src",json.message);
+                            solAmigo.style.width = "300px";
+                            imgAmigo.appendChild(solAmigo);
+                        }).catch(err =>{
+                            console.log("fectch failed" ,err);
+                        })
+                    }
+    
+                    getSolAmigo("https://dog.ceo/api/breeds/image/random")
+                </script>   
+            </div>
+        </div>
+        <div class="col-lg-4">
+                <div class="align_med">
+                </div>
+                <div class="container_btn_like">
+                    <div>
+                        <span id="contador">0</span>
+                        <button class="button" onclick="masLike()">Me gusta</button>
+                    </div>
+                    <div> 
+                        <button class="button" onclick="location.reload()">Ver más</button>
+
+                    </div>
+                </div>
+                <script>
+                    let boton = document.querySelector(".button")
+                    boton.addEventListener("click", () => {
+                    let etiquetaAudio = document.createElement("audio");
+                        etiquetaAudio.setAttribute("src", "sonidos/like.mp3");
+                        etiquetaAudio.play(); 
+                    })
+
+                    let contador = 0;
+                    function masLike() {
+                        contador++;
+                        document.getElementById("contador").textContent = contador;
+                    }
+                </script>
+        </div>
+    </div>
+    <footer>
+        <p>Todos los derechos reservados- Enred@ndo @ 2023</p>
+    </footer>
+</body>
+</html>

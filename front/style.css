@@ -1,0 +1,421 @@
+/* CLASES UNIFICADAS BASICAS (SIN MEDIA QUERY) */
+
+body {
+    background-color: whitesmoke;
+}
+
+.logo_m {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    margin: auto;
+    border-radius: 5px;
+}
+
+/* -------------------- colores: 5 -------------------- */
+
+.color0 {            /* blanco y negro, para pruebas */
+    border-color: black;
+    color: black;
+    background-color: white;
+}
+
+.color1 {
+    border-color: black;
+    color: #8C52FF;
+    background-color: whitesmoke;
+}
+
+.color2 {
+    border-color: black;
+    color: white;
+    background-color: #8C52FF;
+}
+
+.color3 {
+    border-color: #8C52FF;
+    color: #2d2c35;
+    background-color: #C1AAED;
+}
+
+.color4 {
+    border-color: #8C52FF;
+    color:  white;
+    background-color: #1C1D33;  /* color fondo de logo */
+}
+
+/* -------------------- botones: 4 -------------------- */
+
+.boton1 {
+    display: inline-block;
+    padding: 10px 16px 10px 16px;
+    color: white;
+    background-color: #8C52FF;
+    border: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.boton1_fin {
+    display: inline-block;
+    padding: 4px 12px 4px 12px;
+    color: white;
+    background-color: #8C52FF;
+    border: solid;
+    border-width: 1px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.boton2 {
+    display: inline-block;
+    padding: 10px 16px 10px 16px;
+    color: black;
+    background-color: #C1AAED;
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton2_fin {
+    display: inline-block;
+    padding: 4px 12px 4px 12px;
+    color: black;
+    background-color: #C1AAED;
+    border: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* -------------------- bordes para cajas: 2 -------------------- */
+
+.borde1 {
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.borde2 {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+/* -------------------- cajas flex: 8, 4 verticales y 4 horizontales -------------------- */
+
+.cf_hor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    padding: 3px;
+}
+
+.cf_hor_esp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3px;
+    padding: 3px;
+}
+
+.cf_hor_arr {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+    margin: 3px;
+    padding: 3px;
+}
+
+.cf_hor_izq {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    margin: 3px;
+    padding: 3px;
+}
+
+.cf_vert {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 3px;
+    padding: 3px;
+}
+
+.cf_vert_esp {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3px;
+    padding: 3px;
+}
+
+.cf_vert_arr {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 3px;
+    padding: 3px;
+}
+
+.cf_vert_izq {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    margin: 3px;
+    padding: 3px;
+}
+
+/* ------------------------------------ CLASES POR DEFECTO (MEDIA QUERY SIN DEFINIR) ------------------------------------ */
+/* ------------------------------- hasta 1200 (pantallas grandes) y >1200 (muy grandes)  -------------------------------- */
+
+/* -------------------- letras normales: 5 -------------------- */
+
+.lt1_grd {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+}
+
+.lt1_med {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+.lt1_nor {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.lt1_peq {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+
+.lt1_dim {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+}
+
+/* -------------------- letras en negrita: 5 -------------------- */
+
+.lt1_grd_n {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.lt1_med_n {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.lt1_nor_n {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.lt1_peq_n {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.lt1_dim_n {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+/* --------------------- MEDIA QUERYS: 2 definidas (hasta 480, hasta 1024) + 2 pendientes (hasta 768, hasta 1200) --------------------- */
+
+/* PRINCIPIO media query PANTALLAS GRANDES: hasta 1200 px */
+
+@media only screen and (max-width: 1200px) {
+
+    /* NO SE USA. COINCIDE CON LAS CLASES POR DEFECTO. */ 
+    /* POR AHORA hasta 1200 (pantallas grandes) y >1200 (muy grandes, nuestras por defecto) para nosotros son iguales */
+    
+    }
+    
+/* FINAL media query PANTALLAS GRANDES: hasta 1200 px */
+
+/* ---------------------------------------- */
+
+/* PRINCIPIO media query PANTALLAS MEDIANAS: hasta 1024 px */
+
+@media only screen and (max-width: 1024px) {
+
+    .logo_m {
+        display: flex;
+        width: 120px;
+        height: 120px;
+        margin: auto;
+        border-radius: 5px;
+    }
+
+    .lt1_grd {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 24px;
+    }
+    
+    .lt1_med {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+    }
+    
+    .lt1_nor {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+    }
+    
+    .lt1_peq {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+    }
+    
+    .lt1_dim {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 8px;
+    }
+
+    .lt1_grd_n {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .lt1_med_n {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        font-weight: bolder;
+    }
+    
+    .lt1_nor_n {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 12px;
+        font-weight: bolder;
+    }
+    
+    .lt1_peq_n {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+        font-weight: bolder;
+    }
+    
+    .lt1_dim_n {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 8px;
+        font-weight: bolder;
+    }
+    
+}
+
+/* FINAL media query PANTALLAS MEDIANAS: hasta 1024 px */
+
+/* ---------------------------------------- */
+
+/* PRINCIPIO media query PANTALLAS TABLETS: hasta 768 px */
+
+@media only screen and (max-width: 768px) {
+
+    /* NO SE USA. COINCIDE CON LAS CLASES de 1024 DEFECTO. */ 
+    /* POR AHORA hasta 768 (pantallas tables) y hasta 1024 para nosotros son iguales */
+    
+    }
+    
+/* FINAL media query PANTALLAS TABLETS: hasta 768 px */
+
+/* ---------------------------------------- */
+
+/* PRINCIPIO media query PANTALLAS MOVILES: hasta 480 px */
+
+@media only screen and (max-width: 480px) {
+
+    .logo_m {
+        display: flex;
+        width: 85px;
+        height: 85px;
+        margin: auto;
+        border-radius: 3px;
+    }
+    
+    .lt1_grd {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+    }
+    
+    .lt1_med {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+    }
+    
+    .lt1_nor {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+    }
+    
+    .lt1_peq {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 8px;
+    }
+    
+    .lt1_dim {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 6px;
+    }
+
+    .lt1_grd_n {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .lt1_med_n {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 14px;
+        font-weight: bolder;
+    }
+    
+    .lt1_nor_n {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 10px;
+        font-weight: bolder;
+    }
+    
+    .lt1_peq_n {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 8px;
+        font-weight: bolder;
+    }
+    
+    .lt1_dim_n {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 6px;
+        font-weight: bolder;
+    }
+    
+}
+
+/* FINAL media query PANTALLAS MOVILES: hasta 480 px */

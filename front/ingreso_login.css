@@ -1,0 +1,95 @@
+.textos {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.textos_pie {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.caja_datos {
+    width: 36%;
+    margin-left: 32%;
+}
+
+.dato_gr {
+    width: 80%;
+    text-align: center;
+}
+
+.dato_pq {
+    width: 60%;
+    text-align: center;
+}
+
+.boton_space {
+    width: 35%;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+/* media query PANTALLAS GRANDES: hasta 1200 px */
+@media only screen and (max-width: 1200px) {
+    /* NO SE USA POR AHORA. COINCIDE CON LAS CLASES POR DEFECTO. */
+}
+
+/* media query PANTALLAS MEDIANAS: hasta 1024 px */
+@media only screen and (max-width: 1024px) {
+
+    .caja_datos {
+        width: 70%;
+        margin-left: 15%;
+    }
+
+    .dato_gr {
+        width: 92%;
+        text-align: center;
+    }
+
+    .dato_pq {
+        width: 80%;
+        text-align: center;
+    }
+
+    .boton_space {
+        width: 45%;
+        margin-top: 25px;
+        margin-bottom: 25px;
+    }
+
+}
+
+/* media query PANTALLAS TABLETS: hasta 768 px */
+@media only screen and (max-width: 768px) {
+
+    /* NO SE USA. COINCIDE CON LAS CLASES de 1024 DEFECTO. */
+    /* POR AHORA hasta 768 (pantallas tables) y hasta 1024 para nosotros son iguales */
+
+}
+
+/* media query PANTALLAS MOVILES: hasta 480 px */
+@media only screen and (max-width: 480px) {
+
+    .caja_datos {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .dato_gr {
+        width: 95%;
+        text-align: center;
+    }
+
+    .dato_pq {
+        width: 70%;
+        text-align: center;
+    }
+
+    .boton_space {
+        width: 50%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+}

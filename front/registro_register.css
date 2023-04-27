@@ -1,0 +1,91 @@
+.textos {
+    margin-top: 20px;
+    text-align: center;
+} 
+
+.textos_pie {
+    margin-top: 8px;
+    text-align: center;
+}
+
+.bloque {
+    width: 625px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 0px 10px 0px;
+}
+
+.etiqueta {
+    width: 160px;
+    margin-top: 8px;
+    text-align: right;
+}
+
+.dato_largo {
+    width: 425px;
+    margin-left: 5px;
+}
+
+.dato {
+    width: 240px;
+    margin-left: 5px;
+}
+
+
+
+/* media query PANTALLAS GRANDES: hasta 1200 px */
+@media only screen and (max-width: 1200px) {
+    /* NO SE USA POR AHORA. COINCIDE CON LAS CLASES POR DEFECTO. */
+}
+
+/* media query PANTALLAS MEDIANAS: hasta 1024 px */
+@media only screen and (max-width: 1024px) {
+
+    .bloque {
+        width: 430px;
+    }
+
+    .etiqueta {
+        
+        width: 120px;
+    }
+
+    .dato_largo {
+        width: 270px;
+    }
+
+    .dato {
+        width: 220px;
+    }
+
+}
+
+/* media query PANTALLAS TABLETS: hasta 768 px */
+@media only screen and (max-width: 768px) {
+
+    /* NO SE USA. COINCIDE CON LAS CLASES de 1024 DEFECTO. */
+    /* POR AHORA hasta 768 (pantallas tables) y hasta 1024 para nosotros son iguales */
+
+}
+
+/* media query PANTALLAS MOVILES: hasta 480 px */
+@media only screen and (max-width: 480px) {
+
+    .bloque {
+        width: 400px;
+    }
+
+    .etiqueta {
+        width: 92px;
+    }
+
+    .dato_largo {
+        width: 270px;
+    }
+
+    .dato {
+        width: 190px;
+    }
+
+
+}

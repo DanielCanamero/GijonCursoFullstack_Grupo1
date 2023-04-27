@@ -1,0 +1,896 @@
+.align_med {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.espacio_btn {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.espacio_btw {
+  display: flex;
+  justify-content: center;
+}
+
+.foto_encabezado_general {
+    width: 100%;
+    height: 700px;
+    border: 0;
+    margin: 0;
+}
+
+.contenedor_iconos {
+    padding: 20px;
+}
+
+.foto_amigo {
+    width: 298px;
+    height: 250px;
+}
+
+.icono_contenedor {
+    width: 80px;
+    height: 80px;
+    border-radius: 80px;
+    background-color: rgb(38, 37, 37);
+    padding: 4px;
+}
+
+.btn_iconos {
+    width: 200px;
+    height: 30px;
+}
+/* contenedor main */
+.contenedores_main {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.amigos_main {
+    width: 200px;
+    height: 200px;
+}
+
+.amigos_linea {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.carta_amigo {
+    width: 70%;
+    height: 70%;
+}
+
+.contenedor1 {
+    background-color: rgb(194, 158, 212);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 1000px;
+}
+
+.btn_publicar {
+    background-color: #8C52FF;
+}
+
+.contenedor2 {
+    background-color: rgb(194, 158, 212);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 1000px;
+}
+.contenedor3 {
+    background-color: rgb(194, 158, 212);
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 2%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 1000px;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.encabezado_general {
+  padding: 2%;
+}
+
+
+.banner_texto {
+    background-color: #666;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.foto_banner {
+    width: 50%;
+}
+
+.logo_encabezado {
+  width: 200px;
+  height: 200px;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
+.titulo_contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3px;
+    height: 100px;
+    width: 250px;
+}
+
+.container_izq {
+    margin-top: 30px;
+    width: 300px;
+    height: 1000px;
+    border: 2px solid rgb(234, 19, 223);
+}
+
+
+/* contenedor medio */
+.container_mid { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 900px;
+    height: 300px;
+    border: 7px solid rgb(8, 1, 1);
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+.post {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   width: 85%;
+   height: 200px;
+   border: 1px solid  #8C52FF;
+   color: #8C52FF;
+}
+
+.container_der {  
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 1000px;
+    border: 2px solid rgb(255, 0, 0);
+}
+
+.container_all {
+    display: flex;
+    margin-top: 5px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container_top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background-color: #37373c;
+    padding: 0px;
+}
+
+.nav_titulos {
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.foto_usuario {
+    width: 185px;
+    height: 185px;
+}
+
+.descripcion_amigos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.nombre_amigos {
+    margin-top: 0px;
+}
+
+.subtitulo_amigos {
+    color: rgb(83, 18, 234);
+}
+
+.btn {
+    display: flex;
+    margin-bottom: 5px;
+}
+
+.btn_rechazar:hover {
+    background-color: rgb(250, 15, 15);
+    color: #000000;
+}
+
+.btn_rechazar {
+    background-color: rgb(209, 30, 30);
+    color: #ffffff;
+}
+
+.btn_nav {
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+.button_main {
+  padding: 5px 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #C1AAED;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button_banner {
+  padding: 5px 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #C1AAED;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* botón con hover */
+
+.button_banner {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 800;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    background: 0;
+  }
+
+.button_main:hover {  
+    background-color: #8C52FF;
+}
+
+.button_banner:hover {
+  background-color: #8C52FF;
+}
+
+  .button_banner:hover:after {
+    width: 100%;
+    left: 0%;
+  }
+  
+  .button_banner:after {
+    content: "";
+    pointer-events: none;
+    bottom: -3px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 3px;
+    background-color: #ffffff;
+    transition-duration: 400ms;
+  }
+
+  /* css de perfil */
+
+.link_general {
+    color: rgb(255, 255, 255);
+    font-size: medium;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.cuerpo_perfil {
+    background-color: whitesmoke;
+}
+
+.perfil_arriba {
+    position: relative;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(229, 227, 250);
+    box-shadow: 0px 0px 5px darkslateblue(0, 0, 0, 0.3);
+}
+
+.foto_perfil {
+    position: relative;
+    top: 40px;
+    z-index: 1;
+    width: 300px;
+    height: 300px;
+    border-radius: 50px;
+    margin-right: 20px;
+}
+
+.nombre_usuario {
+    display: inline-block;
+    text-align: left;
+    vertical-align: bottom;
+    margin-left: 10px;
+}
+
+.nombre_perfil {
+   margin: 0;
+}
+
+.usuario_perfil {
+    margin: 0;
+    font-style: italic;
+    color: #666;
+}
+
+.perfil_abajo {
+    position: relative;
+    margin-left: 40%;
+    border: 2px solid cadetblue;
+    padding: 20px;
+    width: 450px;
+    background-color: rgb(218, 236, 236);
+    border-radius: 10px;
+}
+
+.titulo_perfil {
+    border: 1px solid;
+    width: 80px;
+    height: 25px;
+    text-align: center;
+    border-color: cornflowerblue;
+    background-color: rgb(87, 87, 125);
+    color: azure;
+}
+
+/* registro signin */
+
+.container_registro {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color:#C1AAED;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  /* Estilos para el título del formulario */
+  
+  .container_registro h4 {
+    color: #686779;
+    text-align: center;
+  }
+
+  .container_btn_like {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20%;
+    margin-right: 70%;
+  
+  }
+  
+  .logo{
+   display: flex;
+   margin-left: 25%;
+   width: 250px;
+   height: 250px;
+  }
+  
+  /* Estilos para los campos de entrada */
+  .form-group label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #686779;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #686779(0, 128, 128, 0.5);
+  }
+  
+  /* Estilos para el botón de registro */
+  .btn_registro {
+    display: block;
+    width: 100%;
+    padding: 5px;
+    background-color: #8C52FF;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn_registro [type="submit"]:hover {
+    background-color: #8C8C97
+  }
+  
+  /* Estilos para el enlace de inicio de sesión */
+  .container p a {
+    color: #8C52FF;
+  }
+  
+  .container p a:hover {
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  /* Estilos para el pie de página */
+  footer {
+    margin-top: 30px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#8C52FF;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  /* editar perfil */
+
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li {
+    margin: 0 10px;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.2s;
+  }
+  
+  nav a:hover {
+    color: #bbb;
+  }
+  
+  /* Estilos para la sección del perfil */
+  .perfil {
+    display: flex;
+    margin: 20px;
+  }
+  
+  .foto img {
+    display: flex;
+    flex-direction: row;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-left: 600px;
+  }
+  
+  .informacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .informacion h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+    margin: 0;
+    color: #8C52FF;
+  }
+  
+  .informacion h2 {
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #686779;
+    margin: 0;
+  }
+  
+  .informacion p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px 0;
+    color: #686779;
+  }
+  
+.button_main {
+    padding: 5px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #C1AAED;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  /* Estilos para el formulario */
+  .formulario {
+    margin: 20px;
+    padding: 30px;
+    background-color: #8C8C97;
+    border-radius: 5px;
+  }
+
+  .formulario_propio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 30%;
+    padding: 20px;
+    width: 700px;
+    height: 800px;
+    background-color: #8C8C97;
+    border-radius: 5px;
+  }
+  
+  .formulario h2 {
+    font-size: 24px;
+    margin: 0 0 20px;
+  }
+  
+  label {
+    display: block;
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .formulario input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+  
+  input[type="submit"] {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 20%;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 40px;
+    background-color: #C1AAED;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+
+  .marco_datos_perfil {
+    background-color: #ccc;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+    width: 300px;
+    height: 30px;
+  }
+
+  /* ingreso login */
+
+  .letra1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  /* clases con media query */
+
+  body {
+    background-color: whitesmoke;
+  }
+  
+  .titulo {
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: #8C52FF;
+    text-align: center;
+  }
+
+  .titulo_configuracion {
+    position: relative;
+    margin-left: 50%;
+  }
+
+  .subtitulo {
+    /* margin-top: 5px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #8C52FF;
+    /* background-color: magenta; */
+    text-align: center;
+  }
+
+  /* estilos normales (pantalla grande, >1024) */
+  .items {
+    margin-top: 10px;
+    width: 28%;
+    margin-left: 36%;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    background-color: #8C8C97;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .footer {
+    margin-top: 30px;
+    font-style: italic;
+    font-size: medium;
+    color: #8C52FF;
+    text-align: center;
+  }
+
+  /* estilos pantalla pequeña (pantalla pequeña, >=1024) */
+  @media only screen and (max-width: 1024px) {
+
+
+    .titulo {
+      margin-top: 15px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 25px;
+      font-weight: bold;
+      color: #8C52FF;
+      background-color: whitesmoke;
+      text-align: center;
+    }
+
+    .subtitulo {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      color: #8C52FF;
+      text-align: center;
+    }
+
+    .items {
+      margin-top: 10px;
+      width: 70%;
+      margin-left: 15%;
+      text-align: center;
+      color: white;
+      border-radius: 5px;
+      background-color: #8C8C97;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+
+    .footer {
+      margin-top: 40px;
+      font-style: italic;
+      font-size: small;
+      color: #8C52FF;
+      text-align: center;
+    }
+
+  }
+
+  /* clases sin media query, fijas */
+
+  .itemtitulo {
+    margin-top: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 110%;
+    color: white;
+    text-align: center;
+  }
+
+  .itemdato {
+    /* margin-top: 5px; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 95%;
+    color: black;
+    text-align: center;
+  }
+
+  .itemdato:focus {
+    background-color: whitesmoke;
+  }
+
+  .boton {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    height: 34px;
+    width: 40%;
+    margin-left: 30%;
+    text-align: center;
+    padding: 5px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #C1AAED;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+
+  .logo {
+    display: flex;
+    margin-top: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+  }
+  /* texto para escribir */
+  .publicacion_main input {
+    background-color: #eee;
+    border: none;
+    padding: 25px;
+    font-size: 12px;
+    width: 300px;
+    border-radius: 15px;
+    color: #8C52FF;
+    box-shadow: 0 0.4rem #dfd9d9;
+    cursor: pointer;
+  }
+  
+  .publicacion_main input:focus {
+    outline-color: #8C52FF;
+  }
+
+  /* boton publicar */
+
+.btn_publicar:link,
+.btn_publicar:visited {
+ text-transform: uppercase;
+ text-decoration: none;
+ color: rgb(27, 27, 27);
+ padding: 10px 30px;
+ border: 1px solid;
+ border-radius: 1000px;
+ display: inline-block;
+ transition: all .2s;
+ position: relative;
+}
+
+.btn_publicar:hover {
+ transform: translateY(-5px);
+ box-shadow: 0 10px 20px rgba(27, 27, 27, .5);
+}
+
+.btn_publicar:active {
+ transform: translateY(-3px);
+}
+
+.btn_publicar::after {
+ content: "";
+ display: flex;
+ align-items: center;
+ height: 100%;
+ width: 100%;
+ border-radius: 100px;
+ top: 0;
+ left: 0;
+ z-index: 1;
+ transition: all .3s;
+}
+
+.btn_publicar:hover::after {
+ background-color: #8C52FF;
+ transform: scaleX(1.4) scaleY(1.5);
+ opacity: 0;
+}
+
+/* BOTON LIKE PERROS */
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  border: 1px solid #4f4f4f;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 19px;
+  color: black;
+  z-index: 1;
+ }
+ 
+ .button:before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.25);
+  top: 100%;
+  width: 140%;
+  height: 180%;
+  background-color: rgba(0, 0, 0, 0.05);
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+ }
+ 
+ .button:after {
+  content: "";
+  position: absolute;
+  left: 55%;
+  transform: translateX(-50%) scaleY(1) scaleX(1.45);
+  top: 180%;
+  width: 160%;
+  height: 190%;
+  background-color: #8C52FF;
+  border-radius: 50%;
+  display: block;
+  transition: all 0.5s 0.1s cubic-bezier(0.55, 0, 0.1, 1);
+  z-index: -1;
+ }
+ 
+ .button:hover {
+  color: #ffffff;
+  border: 1px solid #8C52FF;
+ }
+ 
+ .button:hover:before {
+  top: -35%;
+  background-color: #8C52FF;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+ }
+ 
+ .button:hover:after {
+  top: -45%;
+  background-color: #8C52FF;
+  transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
+ }
