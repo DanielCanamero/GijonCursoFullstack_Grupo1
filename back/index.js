@@ -25,7 +25,7 @@ app.get("/users", async function (req, res) {
 });
 
 app.get("/", function (req, res) {
-  res.sendFile(__dirname + "/public/index.html"); // envía el archivo HTML
+  res.sendFile(__dirname + "/public/index.html");
 });
 
 app.listen(3000, function () {
