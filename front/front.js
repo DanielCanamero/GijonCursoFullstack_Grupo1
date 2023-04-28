@@ -9,8 +9,6 @@ async function getUsers(done) {
 			<a class="h6 mb-0" href="#!">${user.nombres} ${user.apellidos}</a>
 			<p class="mb-0 small text-truncate">${user.username}</p>
 		</div>
-		
-	  </div>
 		`);
 		const main = document.querySelector("seguimientos");
 		main.append(follow);
