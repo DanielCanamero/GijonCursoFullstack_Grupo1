@@ -24,18 +24,6 @@ app.get("/users", async function (req, res) {
   }
 });
 
-app.get("/users/1", async function (req, res) {
-  try {
-    const users = await sequelize.query("SELECT * FROM users WHERE user_id = 1", {
-      type: sequelize.QueryTypes.SELECT,
-    });
-    res.send(users);
-  } catch (error) {
-    console.log(error);
-    res.status(500).send("error del servidor");
-  }
-});
-
 app.get("/", function (req, res) {
   res.sendFile(__dirname + "/public/index.html"); // envía el archivo HTML
 });
