@@ -9,6 +9,10 @@ async function getUsers(done) {
 			<a class="h6 mb-0" href="#!">${user.nombres} ${user.apellidos}</a>
 			<p class="mb-0 small text-truncate">${user.username}</p>
 		</div>
+		<button type="button" class="btn btn-primary btn-sm active mt-1" data-toggle="button" aria-pressed="true" autocomplete="off">
+  			Agregar
+		</button>
+
 		`);
 		const main = document.querySelector("seguimientos");
 		main.append(follow);
