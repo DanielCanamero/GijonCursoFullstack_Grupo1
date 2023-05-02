@@ -12,7 +12,7 @@ async function findAllRows() {
     });
 }
 
-app.get("/users", async function (req, res) {
+app.get("/users", async function (req, res) { // Prueba
   try {
     const users = await sequelize.query("SELECT * FROM users", {
       type: sequelize.QueryTypes.SELECT,
