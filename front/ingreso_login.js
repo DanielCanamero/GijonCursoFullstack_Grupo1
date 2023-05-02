@@ -28,15 +28,10 @@ async function compruebaLogin() {
     if ((usuario === "Victor") && (pwd === "victor")) { ok = true; }
 
     if (ok) {
-        // alert("datos correctos"); 
-        miTitulo.textContent = "Acceso permitido. Entrando...";
-        await retraso(1500); //esperamos un poco
-        // cargar pagina main
         window.open("principal_main.html", "_self")
     }
     else {
-        // alert("datos incorrectos");
-        await retraso(3000);
+        
         intentos = intentos - 1;
         if (intentos == 0) miTitulo.textContent = "Demasiados errores. Acceso denegado.";
         else miTitulo.textContent = "Datos de acceso incorrectos. Te quedan " + intentos + " intentos.";
