@@ -7,6 +7,28 @@ const app = express();
 const sequelize = require("./conexion.js");
 const cors = require("cors");
 app.use(cors());
+const bodyParser = require('body-parser');
+const jwt = require('jsonwebtoken');
+const expressJwt = ('express-jwt');
+
+const jwtClave = ('clave_deseada')
+app.use(express.static('publica'));
+app.use(bodyParser.json());
+
+const usuario = [{
+    nombre: "user",
+    clave: "password"
+}];
+
+app.post("/login", function(request, response){
+    if(request.body.name == usuario.nombre || request.body.clave == usuario.clave){
+        var token = jwt.sign({ usuario: "usuario"}, jwtClave);
+
+        response.send(token);
+    }else{
+        response.status(401).end('Usuario incorrecto');
+    }
+})
 
 async function findAllRows() {
   sequelize
