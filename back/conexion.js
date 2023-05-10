@@ -1,6 +1,6 @@
 const Sequelize = require("sequelize");
-const path = "mysql://enredando:enredando@localhost:3306/enredando";
-const sequelize = new Sequelize(path, { operatorsAliases: 0 });
+const path = "mysql://root@localhost:3306/enredando";
+const sequelize = new Sequelize(path);
 
 sequelize
   .authenticate()
