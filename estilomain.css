@@ -1,14 +1,3 @@
-.dummy {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-
-.bg_amigos{
-  background-color: whitesmoke;
-}
-
 .align_med {
   display: flex;
   flex-direction: column;
@@ -41,6 +30,8 @@
 .foto_amigo {
     width: 298px;
     height: 250px;
+    display: block;
+    margin: 0 auto;
 }
 
 .icono_contenedor {
@@ -131,8 +122,10 @@ body {
     align-items: center;
 }
 
-.foto_banner {
-    width: 50%;
+@media (max-width: 576px) {
+  .foto_banner {
+    width: 100%;
+  }
 }
 
 .logo_encabezado {
@@ -905,3 +898,13 @@ body {
   background-color: #8C52FF;
   transform: translateX(-50%) scaleY(1.3) scaleX(0.8);
  }
+
+ @media only screen and (min-width: 375px) {
+  .contenedores_main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 auto;
+    max-width: 1200px;
+  }
+}
