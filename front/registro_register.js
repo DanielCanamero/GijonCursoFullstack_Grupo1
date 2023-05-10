@@ -1,43 +1,70 @@
+const form = document.getElementById("form-registro");
 
-function retraso(time) {
-  return new Promise(resolve => setTimeout(resolve, time));
-}
+form.addEventListener("submit", async (event) => {
+    event.preventDefault();
 
-async function onGuardaPerfil() {
-  // alert("entro guarda");
-  const miTitulo = document.getElementById("mensaje");
-  const nuevoEmail = document.getElementById("datoEmail").value;
-  //alert(nuevoEmail);
-  const nuevoNick = document.getElementById("datoNick").value;
-  //alert(nuevoNick);
-  const nuevaPwd = document.getElementById("datoPwd").value;
-  //alert(nuevaPwd);
-  const nuevaPwdBis = document.getElementById("datoPwdBis").value;
-  //alert(nuevaPwdBis);
+    const nombres = document.getElementById("nombres").value;
+    const apellidos = document.getElementById("apellidos").value;
+    const email = document.getElementById("email").value;
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
+    // const foto = document.getElementById("foto").value;
+    // const fecha_nac = document.getElementById("fecha_nac").value;
+    // const idiomas = document.getElementById("idiomas").value;
+    // const estudios = document.getElementById("estudios").value;
+    // const hobbies = document.getElementById("hobbies").value;
+    // const pais_nac = document.getElementById("pais_nac").value;
+    // const fecha_reg = document.getElementById("fecha_reg").value;
+    // const terms = document.getElementById("terms").checked;
 
-  miTitulo.textContent = "Comprobando datos...";
-  if ((nuevoEmail==="") || (nuevoEmail===null)) { miTitulo.textContent = "Error: el E-mail es obligatorio"; return;};
-  if ((nuevoNick==="") || (nuevoNick===null)) { miTitulo.textContent = "Error: el Nick es obligatorio"; return;};
-  if ((nuevaPwd==="") || (nuevaPwd===null)) { miTitulo.textContent = "Error: la contraseña es obligatoria"; return;};
-  if ((nuevaPwdBis==="") || (nuevaPwdBis===null)) { miTitulo.textContent = "Error: la repetición de la contraseña es obligatoria"; return;};
-  if (nuevaPwd!==nuevaPwdBis) {miTitulo.textContent = "Error: la contraseña y su repetición son distintas";  return;};
-  await retraso(1500);      // simulamos pausa
+    // if (!terms){
+    //     alert("Debe aceptar los términos y condiciones para continuar.");
+    //     return;
+    // }
 
-  miTitulo.textContent = "Creando cuenta...";
-  //PENDIENTE: comprobacion e-mail y nick no existen ya
-  //PENDIENTE: grabacion datos nueva cuenta
-  await retraso(2000);      // simulamos pausa
+    //     const emailRegex = /^[^\s@]+@[^\s@]+\[^\s@]+$/;
+    // if (!emailRegex.test(email)) {
+    //     alert("Debe ingresar un email válido para continuar.");
+    //     return;
+    // }
 
-  miTitulo.textContent = "Cuenta creada. Redirigiendo...";
-  //PENDIENTE: inicializacion de web con usuario activo
-  await retraso(1500);      // simulamos pausa
-  window.open("./principal_main.html", "_self");
-}
+    if (password.length < 6 || password.length > 20) {
+        alert("La contraseña debe tener entre 6 y 20 caracteres");
+        return;
+    }
 
-async function onCancelaPerfil() {
-  // alert("entro cancel");
-  const miTitulo = document.getElementById("mensaje");
-  miTitulo.textContent = "Redirigiendo...";
-  await retraso(1000);
-  window.open("./ingreso_login.html", "_self");
-}
+    // if (!alias || !nombres || !apellidos || !email || !username || !password || !fecha_nac) {
+    //     alert("Debe tener completos los siguientes campos: nombres, apellidos, email, username, contraseña y fecha de nacimiento.");
+    //     return;
+    // }
+
+    try {
+        const response = await fetch("http://localhost:3000/registro", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+                nombres: nombres,
+                apellidos: apellidos,
+                email: email,
+                username: username,
+                password: password,
+            })
+        });
+
+        const data = await response.json();
+
+        if (data.message === 'Usuario agregado correctamente') {
+            alert(data.message);
+            
+            window.location.href = "login.html";
+           
+        } else {
+            alert("Error al crear usuario");
+        }
+    } catch (error){
+        console.error(error);
+        alert("Ha ocurrido un error al crear usuario");
+    }
+});
