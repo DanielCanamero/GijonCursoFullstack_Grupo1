@@ -8,46 +8,43 @@
   <title>Registro</title>
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-  
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./registro_register.css">
-  
-
 </head>
 
 <body>
-
   <img class="logo_m" src="./img/logo_oscuro_480.png" alt="Logo de ENREDANDO" style="margin-top:5px;">
   <div class="lt1_grd_n color1 textos"><label class="shadow-lg p-3 rounded">Bienvenido a ENRED@NDO</label></div>
   <div class="cf_vert lt1_med color1 textos">Crea tu nueva cuenta</div>
   <form id="form-registro" method="" action="" class="color3 bloque borde2 textos">
+    
     <div class="cf_hor_izq">
-      <label class="etiqueta lt1_nor" for="datoEmail">Nombres</label>
+      <label class="etiqueta lt1_nor" for="nombres">Nombres</label>
       <input class="dato_largo lt1_nor_n" type="text" id="nombres"  value="" required>
     </div>
 
     <div class="cf_hor_izq">
-      <label class="etiqueta lt1_nor" for="datoEmail">Apellidos</label>
+      <label class="etiqueta lt1_nor" for="apellidos">Apellidos</label>
       <input class="dato_largo lt1_nor_n" type="text" id="apellidos"  value="" required>
     </div>
 
     <div class="cf_hor_izq">
-      <label class="etiqueta lt1_nor" for="datoEmail">E-mail</label>
+      <label class="etiqueta lt1_nor" for="email">E-mail</label>
       <input class="dato_largo lt1_nor_n" type="email" id="email"  value="" required>
     </div>
 
     <div class="cf_hor_izq">
-      <label class="etiqueta lt1_nor" for="datoNick">Username</label>
+      <label class="etiqueta lt1_nor" for="username">Username</label>
       <input class="dato lt1_nor_n" type="text" id="username"  value="" required>
     </div>
 
     <div class="cf_hor_izq">
-      <label class="etiqueta lt1_nor" for="datoPwd">Contraseña</label>
+      <label class="etiqueta lt1_nor" for="password">Contraseña</label>
       <input class="dato lt1_nor_n" type="password" id="password"  value="" required>
     </div>
 
     <div class="cf_hor_izq">
-      <label class="etiqueta lt1_nor" for="datoPwdBis">Repite contraseña</label>
+      <label class="etiqueta lt1_nor" for="confirm-password">Repite contraseña</label>
       <input class="dato lt1_nor_n" type="password" id="confirm-password"  value="" required>
     </div>
 
@@ -61,6 +58,6 @@
   </form>
 
   <div class="cf_vert lt1_med_n textos_pie color1" id="mensaje"></div>
-  <script src="registro_register.js"></script>
+  <script src="./registro_register.js"></script>
 </body>
 </html>
