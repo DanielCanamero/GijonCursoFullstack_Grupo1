@@ -1,0 +1,102 @@
+.titulo {
+  color: gold;
+}
+
+.follow-card {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: .8rem;
+    justify-content: space-between;
+  }
+  
+  .follow-card-header {
+    display: flex;
+    align-items: center;
+    gap: 4px
+  }
+  
+  .follow-card-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .follow-card-userName {
+    opacity: .6;
+  }
+  
+  .follow-card-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+  }
+  
+  .follow-card-button {
+    cursor: pointer;
+    margin-left: 16px;
+    border: 0;
+    border-radius: 999px;
+    padding: 6px 16px;
+    font-weight: bold;
+    border: 1px solid #000;
+    transition: .3s ease background-color;
+  }
+  
+  .follow-card-button:hover {
+    opacity: .8;
+  }
+  
+  .Reloj {
+    background-color: #fff;
+  }
+  
+  /* RELOJ ANALÓGICO */
+  .RelojA {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .clock {
+    width: 250px;
+    height: 250px;
+    position: relative;
+  }
+  
+  .dial {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #ff0000;
+    background-color: #fff;
+  }
+  
+  .hand {
+    position: absolute;
+    width: 4px;
+    height: 50px;
+    background-color: #03ef26;
+    left: calc(50% - 10px);
+    top: calc(50% - 40px);
+    transform-origin: bottom center;
+  }
+  
+  .hour-hand {
+    height: 50px;
+  }
+  
+  .minute-hand {
+    height: 45px;
+  }
+  
+  .second-hand {
+    height: 49px;
+    background-color: red;
+  }
